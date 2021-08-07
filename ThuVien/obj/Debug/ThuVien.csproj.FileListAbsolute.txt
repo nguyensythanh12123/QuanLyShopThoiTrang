@@ -1,0 +1,6 @@
+D:\ITTC\Nam3\HK2\Kiem tra chuc luong phan mem\Do An\DoAnThoiTrang\ThuVien\bin\Debug\ThuVien.dll
+D:\ITTC\Nam3\HK2\Kiem tra chuc luong phan mem\Do An\DoAnThoiTrang\ThuVien\bin\Debug\ThuVien.pdb
+D:\ITTC\Nam3\HK2\Kiem tra chuc luong phan mem\Do An\DoAnThoiTrang\ThuVien\obj\Debug\ThuVien.csprojAssemblyReference.cache
+D:\ITTC\Nam3\HK2\Kiem tra chuc luong phan mem\Do An\DoAnThoiTrang\ThuVien\obj\Debug\ThuVien.csproj.CoreCompileInputs.cache
+D:\ITTC\Nam3\HK2\Kiem tra chuc luong phan mem\Do An\DoAnThoiTrang\ThuVien\obj\Debug\ThuVien.dll
+D:\ITTC\Nam3\HK2\Kiem tra chuc luong phan mem\Do An\DoAnThoiTrang\ThuVien\obj\Debug\ThuVien.pdb

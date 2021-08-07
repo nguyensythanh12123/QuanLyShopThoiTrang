@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0341336F-803D-4F93-B887-FA5D24527061}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoAnThoiTrang</RootNamespace>
+    <AssemblyName>DoAnThoiTrang</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.3.8.0\lib\net46\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.MachineLearning.3.8.0\lib\net46\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Math.3.8.0\lib\net46\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math.Core, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Math.3.8.0\lib\net46\Accord.Math.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Statistics.3.8.0\lib\net46\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Phat Trien Ung Dung Thong Minh\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Phat Trien Ung Dung Thong Minh\Word_Excel\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\Phat Trien Ung Dung Thong Minh\Word_Excel\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Syncfusion.Compression.Base">
+      <HintPath>..\..\..\..\Phat Trien Ung Dung Thong Minh\Word_Excel\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base">
+      <HintPath>..\..\..\..\Phat Trien Ung Dung Thong Minh\Word_Excel\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base">
+      <HintPath>..\..\..\..\Phat Trien Ung Dung Thong Minh\Word_Excel\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanHangGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHangGUI.Designer.cs">
+      <DependentUpon>BanHangGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clothe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Clothe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\BangGiaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\BangGiaGUI.Designer.cs">
+      <DependentUpon>BangGiaGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\BoPhanGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\BoPhanGUI.Designer.cs">
+      <DependentUpon>BoPhanGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\LoaiSPGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\LoaiSPGUI.Designer.cs">
+      <DependentUpon>LoaiSPGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\NhaCungCapGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\NhaCungCapGUI.Designer.cs">
+      <DependentUpon>NhaCungCapGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\NhanVienGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\NhanVienGUI.Designer.cs">
+      <DependentUpon>NhanVienGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\SanPhamGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\SanPhamGUI.Designer.cs">
+      <DependentUpon>SanPhamGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatHangGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatHangGUI.Designer.cs">
+      <DependentUpon>DatHangGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DM_ManHinhGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DM_ManHinhGUI.Designer.cs">
+      <DependentUpon>DM_ManHinhGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoanhThuGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoanhThuGUI.Designer.cs">
+      <DependentUpon>DoanhThuGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonBanHang.cs" />
+    <Compile Include="DonDatHang.cs" />
+    <Compile Include="Excel_Export.cs" />
+    <Compile Include="FileCommon.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox_KetQUa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox_KetQUa.Designer.cs">
+      <DependentUpon>MessageBox_KetQUa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyDonHangOnline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyDonHangOnline.Designer.cs">
+      <DependentUpon>QuanLyDonHangOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TuVanGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TuVanGUI.Designer.cs">
+      <DependentUpon>TuVanGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="HoaDonBanHang.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3.cs" />
+    <Compile Include="MessageBoxCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxCustom.Designer.cs">
+      <DependentUpon>MessageBoxCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxThanhCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxThanhCong.Designer.cs">
+      <DependentUpon>MessageBoxThanhCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapHangGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHangGUI.Designer.cs">
+      <DependentUpon>NhapHangGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_PhanQuyenGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_PhanQuyenGUI.Designer.cs">
+      <DependentUpon>QL_PhanQuyenGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNguoiDung.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <Compile Include="Word_Export.cs" />
+    <EmbeddedResource Include="BanHangGUI.resx">
+      <DependentUpon>BanHangGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\BangGiaGUI.resx">
+      <DependentUpon>BangGiaGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\BoPhanGUI.resx">
+      <DependentUpon>BoPhanGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\LoaiSPGUI.resx">
+      <DependentUpon>LoaiSPGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\NhaCungCapGUI.resx">
+      <DependentUpon>NhaCungCapGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\NhanVienGUI.resx">
+      <DependentUpon>NhanVienGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\SanPhamGUI.resx">
+      <DependentUpon>SanPhamGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatHangGUI.resx">
+      <DependentUpon>DatHangGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DM_ManHinhGUI.resx">
+      <DependentUpon>DM_ManHinhGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoanhThuGUI.resx">
+      <DependentUpon>DoanhThuGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox_KetQUa.resx">
+      <DependentUpon>MessageBox_KetQUa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDonHangOnline.resx">
+      <DependentUpon>QuanLyDonHangOnline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TuVanGUI.resx">
+      <DependentUpon>TuVanGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxCustom.resx">
+      <DependentUpon>MessageBoxCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxThanhCong.resx">
+      <DependentUpon>MessageBoxThanhCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapHangGUI.resx">
+      <DependentUpon>NhapHangGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QL_PhanQuyenGUI.resx">
+      <DependentUpon>QL_PhanQuyenGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Clothe.xsc">
+      <DependentUpon>Clothe.xsd</DependentUpon>
+    </None>
+    <None Include="Clothe.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Clothe.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Clothe.xss">
+      <DependentUpon>Clothe.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{a07271a0-38eb-4e94-8c5e-85ecb72ba2a3}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{A757BF3D-A297-4361-AA35-F3B8D7537593}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThuVien\ThuVien.csproj">
+      <Project>{605BA1A0-BB9C-442E-8328-1ACF9F930026}</Project>
+      <Name>ThuVien</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_house_10811.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artboard_123056.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Catalog_36769.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_assignment_128_28219.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_man_user_support_supportfortheuser_aquestion_theclient_2330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MissionControl2_22725.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scienceandfiction-sell_99284.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_table_order_report_history_2332.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import_icon-icons.com_52387.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.0\build\Accord.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Accord.3.8.0\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.3.8.0\build\Accord.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
